@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=assets/moment.js> </script> </head> <body>
+
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="whole">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="input-group mb-3">
+                    <input type="text"   class="form-control"
+                       
+                        aria-describedby="button-addon2" id="cityInput"></input>
+                    <div class="input-group-append">
+                        <button class="material-icons md-18" class="btn btn-outline-secondary" type="submit"
+                            id="button-addon2">search</button>
+                    </div>
+                </div>
+                <div class="history">
+                    <div class="card" style="width: 100%;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="one">Atlanta</li>
+                            <li class="list-group-item" id="two">Austin</li>
+                            <li class="list-group-item" id="three">Birmingham</li>
+                            <li class="list-group-item" id="four">Nashville</li>
+                        </ul>
+                    </div>
+                </div>
+                </table>
+            </div>
+            <div class="col-lg-8 col-12">
+                <div class="mainBox">
+                    <div class="row" id="topRow">
+
+                        <div class="col-lg-4 col-12">
+                            <h2 class="cityDate"></h2>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <h2 class="date"></h2>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <img class="icon"></img>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="currentWeather">
+                                <tr>
+                                    
+                                    <td >Temp: </td>
+                                    <td class="temp"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Humidity:</td>
+                                    <td class="humidity"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Wind Speed:</td>
+                                    <td class="windSpeed"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    
+                                    <td>UV index:</td>
+                                    <td class="UVindex"></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <h2>5 Day Forecast:</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                    <p class="dayOneDate"></p>
+                <img class="dayOneIcon" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="dayOneTemp"> </p>
+                    <p class="dayOneHumidity"> </p>
+                </div>
+            </div>
+            <div class="card">
+                    <p class="dayTwoDate"></p>
+                <img class="dayTwoIcon" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="dayTwoTemp"> </p>
+                    <p class="dayTwoHumidity"> </p>
+                </div>
+            </div>
+            <div class="card">
+                    <p class="dayThreeDate"></p>
+                <img class="dayThreeIcon" class="card-img-top" alt="...">
+                <div class="card-body">
+                        <p class="dayThreeTemp"> </p>
+                        <p class="dayThreeHumidity"> </p>
+                </div>
+            </div>
+            <div class="card">
+                    <p class="dayFourDate"></p>
+                <img class="dayFourIcon" class="card-img-top" alt="...">
+                <div class="card-body">
+                        <p class="dayFourTemp"> </p>
+                        <p class="dayFourHumidity"> </p>
+                </div>
+            </div>
+            <div class="card">
+                    <p class="dayFiveDate"></p>
+                <img class="dayFiveIcon" class="card-img-top" alt="...">
+                <div class="card-body">
+                        <p class="dayFiveTemp"> </p>
+                        <p class="dayFiveHumidity"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+    </body>
+
+</html>

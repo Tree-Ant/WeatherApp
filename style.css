@@ -1,0 +1,155 @@
+body{
+    background: whitesmoke;
+    font-weight: bold;
+   
+}
+header{
+   background: black;
+   color: whitesmoke;
+    
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 20px;
+}
+.card {
+    text-align: center;
+    width: 17.5%;
+    margin: auto 1.25%; 
+    background: white;   
+}
+#topRow {
+    height: 40%;
+    text-align: center;
+}
+.currentWeather{
+    padding: 10%;
+    margin-left: 100px;
+   
+}
+.icon{
+    border-radius: 180px;
+    background: dodgerblue;
+}
+#one, #two, #three, #four{
+    background: white;
+}
+.history {
+    margin-bottom: 10px;    
+}
+
+.temp, .humidity, .windSpeed, .UVindex {
+    text-align: left;
+}
+td{
+    min-width: 50px;
+    padding-right:10px;
+}
+.dayOneIcon, .dayTwoIcon,.dayThreeIcon,.dayFourIcon,.dayFiveIcon{
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whole{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    background: transparent;
+}
+.mainBox{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px;
+    background: white;
+}
+@media (max-width: 576px) {
+    body{
+        background: whitesmoke;
+    }
+    header{
+        background: black;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .card {
+        color: whitesmoke;
+        text-align: center;
+        height: 33.33%;
+        width: 100%;
+        margin-bottom: 10px;
+        background: dodgerblue; 
+        padding: 0;  
+    }
+    #topRow {
+        height: 40%;
+    }
+    .currentWeather{
+        padding: 10%;
+        margin-top: 20px;
+       
+    }
+    #one, #two, #three, #four{
+        color: black;
+        width: 100%;
+        background: whitesmoke;
+    }
+    .history {
+        margin-bottom: 10px;
+        
+    }
+    .mainBox{
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 100%;
+        padding: 10px;
+        background: whitesmoke;
+    }
+    .temp, .humidity, .windSpeed, .UVindex {
+        text-align: right;
+    }
+    table{
+        width: 100%;
+    }
+    tr{
+        width: 100%;
+    }
+    td{
+        text-align: right;
+        margin: auto;
+        width: 33.33%;
+        padding-right:10px;
+    }
+    .dayOneIcon, .dayTwoIcon,.dayThreeIcon,.dayFourIcon,.dayFiveIcon{ 
+        width: auto;       
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whole{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        background: white;
+    }
+    .left{
+        text-align: left;
+    }
+    .date{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .container{
+        padding: 0px 0px;
+    }
+    .col-lg-4 col-12{
+        padding: 0;
+    }
+  }
