@@ -20,10 +20,7 @@ h2{
     margin: auto 1.25%; 
     background: white;   
 }
-#topRow {
-    height: 40%;
-    text-align: center;
-}
+
 .currentWeather{
     padding: 10%;
     margin-left: 100px;
@@ -32,6 +29,7 @@ h2{
 .icon{
     border-radius: 180px;
     background: dodgerblue;
+    text-align: right;
 }
 #one, #two, #three, #four{
     background: white;
@@ -79,7 +77,9 @@ td{
     }
     h2{
         margin-bottom: 20px;
+        text-align: left;
     }
+  
     .card {
         color: whitesmoke;
         text-align: center;
@@ -90,7 +90,7 @@ td{
         padding: 0;  
     }
     #topRow {
-        height: 40%;
+        margin-bottom: 20px;
     }
     .currentWeather{
         padding: 10%;
@@ -113,11 +113,10 @@ td{
         padding: 10px;
         background: whitesmoke;
     }
-    .temp, .humidity, .windSpeed, .UVindex {
-        text-align: right;
-    }
+    
     table{
         width: 100%;
+        margin-bottom: 20px
     }
     tr{
         width: 100%;
@@ -125,8 +124,13 @@ td{
     td{
         text-align: right;
         margin: auto;
-        width: 33.33%;
+        width: 200px;
         padding-right:10px;
+    }
+    .temp, .humidity, .windSpeed, .UVindex {
+        text-align: left;
+       
+        
     }
     .dayOneIcon, .dayTwoIcon,.dayThreeIcon,.dayFourIcon,.dayFiveIcon{ 
         width: auto;       
@@ -145,6 +149,8 @@ td{
     .date{
         font-size: 1rem;
         text-align: left;
+        margin: 10%;
+        
     }
     .container{
         padding: 0px 0px;
