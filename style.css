@@ -28,6 +28,7 @@ p {
     font-size: 1.1rem;
 }
 .card {
+    display: none;
     text-align: center;
     width: 17.5%;
     margin: auto 1.25%; 
@@ -96,7 +97,7 @@ td{
     }
   
     .card {
-       
+        display: none;
         text-align: center;
         height: 33.33%;
         width: 100%;

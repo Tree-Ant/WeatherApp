@@ -61,6 +61,7 @@ $("#four").hover(function(){
 
 $("input").keydown(function () {
   if (event.keyCode === 13) {
+    $(".card").show();
     displayWeather();
     fiveDay();
   }
@@ -68,7 +69,7 @@ $("input").keydown(function () {
 
 $("#button-addon2").on("click", function () {
   var city = $("#cityInput").val();  
-
+  $(".card").show();
   displayWeather();
   fiveDay();
 });
@@ -311,7 +312,7 @@ function history() {
 function displayWeather() {
   var city = $("#cityInput").val();
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + key;
-
+  
   $.ajax({
     url: queryURL,
     method: "GET"
@@ -346,6 +347,7 @@ function displayWeather() {
 
 $("#one").on("click", function () {
   var city = $("#one").text();
+  $(".card").show();
   displayOneWeather();
   fiveDayOne();
 });
@@ -385,6 +387,7 @@ function displayOneWeather() {
 
 $("#two").on("click", function () {
   var city = $("#two").text();
+  $(".card").show();
   displayTwoWeather();
   fiveDayTwo();
 });
@@ -424,6 +427,7 @@ function displayTwoWeather() {
 
 $("#three").on("click", function () {
   var city = $("#three").text();
+  $(".card").show();
   displayThreeWeather();
   fiveDayThree();
 });
@@ -463,6 +467,7 @@ function displayThreeWeather() {
 
 $("#four").on("click", function () {
   var city = $("#four").text();
+  $(".card").show();
   displayFourWeather();
   fiveDayFour();
 });
