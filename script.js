@@ -1,6 +1,64 @@
 var key = "697a503cd6f089e038d0e57a5755ce20";
 var cityHistory = [];
 
+console.log($("#customSwitch1")[0].checked);
+
+$("#customSwitch1").on("click", function () {
+    if($("#customSwitch1")[0].checked == true){
+    $("body").css("background-color", "rgb(25,25,25)");
+    $("body").css("color", "white");
+    $(".card").css("background-color", "black");
+    $(".card").css("border", "gray");
+    $("#one, #two, #three, #four").css("background-color", "black");  
+    $(".mainBox").css("background-color", "black");
+    $(".mainBox").css("border", "solid 1px gray");
+    $("#cityInput").css("background-color", "black");
+    $("#button-addon2").css("background-color", "black");
+    $("#button-addon2").css("color", "white");
+    $(".whole").css("border", "solid 1px gray");  
+    $(".icon").css("background-color", "gray");
+    $(".whole").css("background-color", "transparent");
+  }else{
+    $("body").css("background-color", "whitesmoke");
+    $("body").css("color", "black");
+    $(".card").css("background-color", "white");    
+    $("#one, #two, #three, #four").css("background-color", "white");   
+    $(".mainBox").css("background-color", "white");
+    $(".mainBox").css("border", "solid 1px black");
+    $("#cityInput").css("background-color", "white");
+    $("#button-addon2").css("background-color", "whitesmoke");
+    $("#button-addon2").css("color", "black");
+    $(".whole").css("border", "solid 1px black"); 
+    $(".icon").css("background-color", "dodgerblue");
+    $(".whole").css("background-color", "transparent");
+
+  }
+});
+
+$("#one").hover(function(){
+  $(this).css("background-color", "dodgerblue");
+  }, function(){
+  $(this).css("background-color", "transparent");
+});
+
+$("#two").hover(function(){
+  $(this).css("background-color", "dodgerblue");
+  }, function(){
+  $(this).css("background-color", "transparent");
+});
+
+$("#three").hover(function(){
+  $(this).css("background-color", "dodgerblue");
+  }, function(){
+  $(this).css("background-color", "transparent");
+});
+
+$("#four").hover(function(){
+  $(this).css("background-color", "dodgerblue");
+  }, function(){
+  $(this).css("background-color", "transparent");
+});
+
 $("input").keydown(function () {
   if (event.keyCode === 13) {
     displayWeather();
@@ -13,7 +71,6 @@ $("#button-addon2").on("click", function () {
 
   displayWeather();
   fiveDay();
-
 });
 
 function fiveDay() {
@@ -220,6 +277,11 @@ function fiveDayFour() {
 
   });
 }
+function emptyBox() {
+  $("#cityInput").attr("value", "");
+  $("#cityInput").text("");
+  
+}
 
 function oldHistory() {
   var getHistory = JSON.parse(localStorage.getItem("History"));
@@ -244,7 +306,6 @@ function history() {
     $("#three").text(cityHistory[2]);
     $("#four").text(cityHistory[3]);
   };
-
 }
 
 function displayWeather() {
@@ -259,6 +320,8 @@ function displayWeather() {
     cityHistory.unshift(response.name);
     localStorage.setItem("History", JSON.stringify(cityHistory));
    
+    $("#cityInput").focusout();
+
     $(".cityDate").text(response.name);
     $(".icon").attr("src", imageUrl);
     $(".temp").text(response.main.temp + " F");
@@ -277,6 +340,7 @@ function displayWeather() {
       $(".UVindex").text(responseUV.value);
     });
   });
+  emptyBox();
   history();
 }
 

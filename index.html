@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
 
-
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -17,7 +17,23 @@
     <script src=assets/moment.js> </script> </head> <body>
 
     <header>
-        <h1>Weather Dashboard</h1>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4 col-0">
+                            
+                    </div>
+                <div class="col-md-4 col-12">
+                        <h1>Weather Dashboard</h1>
+                </div>
+                <div class="col-md-4 col-0">
+                        <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Light/Dark</label>
+                              </div>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
     <div class="container">
@@ -26,7 +42,7 @@
             <div class="col-lg-4 col-12">
                 <div class="input-group mb-3">
                     <input type="text"   class="form-control"                       
-                        aria-describedby="button-addon2" id="cityInput"></input>
+                        aria-describedby="button-addon2" id="cityInput" onfocus="this.value=''" value="Nashville"></input>
                     <div class="input-group-append">
                         <button class="material-icons md-18" class="btn btn-outline-secondary" type="submit"
                             id="button-addon2">search</button>
@@ -47,7 +63,6 @@
             <div class="col-lg-8 col-12">
                 <div class="mainBox">
                     <div class="row" id="topRow">
-
                         <div class="col-lg-8 col-7">
                             <h2 class="cityDate"></h2>
                             <h5 class="date"></h5>
@@ -55,32 +70,23 @@
                         <div class="col-lg-4 col-5">
                             <img class="icon"></img>
                         </div>
-                       
-
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <table class="currentWeather">
-                                <tr>
-                                    
+                                <tr>                                    
                                     <td >Temp: </td>
-                                    <td class="temp"></td>
-                                    
+                                    <td class="temp"></td>                                    
                                 </tr>
-                                <tr>
-                                    
+                                <tr>                                    
                                     <td>Humidity:</td>
-                                    <td class="humidity"></td>
-                                    
+                                    <td class="humidity"></td>                                    
                                 </tr>
-                                <tr>
-                                    
+                                <tr>                                    
                                     <td>Wind Speed:</td>
-                                    <td class="windSpeed"></td>
-                                    
+                                    <td class="windSpeed"></td>                                    
                                 </tr>
-                                <tr>
-                                    
+                                <tr>                                    
                                     <td>UV index:</td>
                                     <td class="UVindex"></td>
                                     <td></td>
@@ -142,7 +148,7 @@
     </div>
 </div>
 </div>
-<p id="test" >Hello</p>
+
     <script src="script.js"></script>
     </body>
 

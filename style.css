@@ -1,24 +1,38 @@
 body{
     background: whitesmoke;
     font-weight: bold;
-   
+    font-family: 'Abel', sans-serif;   
+    
+}
+#customSwitch1{
+    text-align: right;
+}
+
+li {
+    font-size: 1.1rem;
 }
 header{
    background: black;
    color: whitesmoke;
-    
+    border-bottom: solid gray;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
 h2{
+    font-size: 3rem;
     margin-bottom: 20px;
+}
+p {
+    margin-top: 10%;
+    font-size: 1.1rem;
 }
 .card {
     text-align: center;
     width: 17.5%;
     margin: auto 1.25%; 
-    background: white;   
+    background: white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);  
 }
 
 .currentWeather{
@@ -30,6 +44,7 @@ h2{
     border-radius: 180px;
     background: dodgerblue;
     text-align: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #one, #two, #three, #four{
     background: white;
@@ -73,7 +88,7 @@ td{
         background: black;
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     h2{
         margin-bottom: 20px;
@@ -81,12 +96,12 @@ td{
     }
   
     .card {
-        color: whitesmoke;
+       
         text-align: center;
         height: 33.33%;
         width: 100%;
         margin-bottom: 10px;
-        background: dodgerblue; 
+        background: white; 
         padding: 0;  
     }
     #topRow {
@@ -98,7 +113,7 @@ td{
        
     }
     #one, #two, #three, #four{
-        color: black;
+       
         width: 100%;
         background: whitesmoke;
     }
@@ -138,6 +153,7 @@ td{
         margin-right: auto;
     }
     .whole{
+        margin-top: 10px;
         border: 1px solid black;
         border-radius: 5px;
         padding: 20px;
@@ -160,3 +176,4 @@ td{
         padding: 0;
     }
   }
+  
