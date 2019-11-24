@@ -54,6 +54,7 @@ p {
     margin-bottom: 10px;    
 }
 
+
 .temp, .humidity, .windSpeed, .UVindex {
     text-align: left;
 }
@@ -175,6 +176,10 @@ td{
     }
     .col-lg-4 col-12{
         padding: 0;
+    }
+    #button-addon2{
+        background-color: whitesmoke;
+        
     }
   }
   
